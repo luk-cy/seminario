@@ -64,3 +64,13 @@ Por cada TIC se crea una carpeta en `outputs/` con:
 
 - `psfmachine` está pensado para campos congestionados y puede mejorar la deconvolución frente a aperturas simples.
 - Si un TIC no tiene TPF en un sector/cadencia dado, se reporta en `error.txt` y el flujo continúa.
+
+
+## Uso en Jupyter Notebook
+
+Si prefieres trabajar en notebook, abre `notebooks/tess_psfmachine_workflow.ipynb` y ejecuta las celdas en orden. El notebook:
+
+- instala dependencias con `%pip`,
+- define la lista de TICs,
+- procesa cada TIC con `lightkurve` + `psfmachine`,
+- exporta resultados en `outputs_notebook/`.
